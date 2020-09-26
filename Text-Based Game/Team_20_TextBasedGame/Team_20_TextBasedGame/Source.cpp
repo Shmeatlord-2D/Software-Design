@@ -10,7 +10,8 @@ int main() {
 
 	cout << "While looking through the wreckage of the Demeter, you found out that the exploration dispensery was damaged, but still operational." << endl
 		<< "When you selected the tools needed, the dispensery can only operate to an extent that it can only dispense one item of each catagory." << endl
-		<< "for exploration, the catagories are:" << endl << "Excavation" << endl << "Liquid contaiment" << "Weaponry" << "Illumination" << endl << endl
-		<< "In the feild of Excavation, would you prefer:" << endl << "Pickaxe" << endl << "or" << endl << "Drill" << endl;
-	
+		<< "for exploration, the catagories are:" << endl << endl <<"Excavation" << endl << endl << "Liquid contaiment" << endl << endl << "Weaponry" << endl << endl << "Illumination" << endl << endl
+		<< "In the feild of Excavation, would you prefer:" << endl << endl << "Pickaxe" << endl << "or" << endl << "Drill" << endl;
+	system("pause");
+	return 0;
 }

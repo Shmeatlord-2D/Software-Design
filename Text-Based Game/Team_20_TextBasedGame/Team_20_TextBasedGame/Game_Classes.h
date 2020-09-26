@@ -6,11 +6,12 @@ using namespace std;
 
 class Story {
 private:
-	char *singlePlayerIntro;
-	char *multiPlayerIntro;
+	string singlePlayerIntro;
+	string multiPlayerIntro;
 
 public:
-	void setIntro() {
+	void setIntro() 
+	{
 		singlePlayerIntro = "Greetings VST - 7426. You are one of two brave astronauts, the core members of Operation"
 			" Vesta, that have voyaged to examine the distant planet of Minerva, which shows great promise"
 			" as a potential new home for the inhabitants of Earth.Unfortunately, due to a miscalculation in"

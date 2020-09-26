@@ -4,7 +4,7 @@
 using namespace std;
 
 void mainMenu() {
-	string menuChoice;
+	int menuChoice;
 
 	cout << "ESCAPE FROM MINERVA" << endl;
 	cout << "(1) Single Player" << endl;
@@ -13,16 +13,15 @@ void mainMenu() {
 
 	cin >> menuChoice;
 
-	int input = convertToInt(menuChoice);
-	inputValidation(input);
+	inputValidation(menuChoice);
 
-	if (input == 1) {
+	if (menuChoice == 1) {
 		singlePlayer();
 	}
-	else if (input == 2) {
+	else if (menuChoice == 2) {
 		multiPlayer();
 	}
-	else if (input == 0) {
+	else if (menuChoice == 0) {
 		cout << "Exit" << endl;
 	}
 }
@@ -33,6 +32,7 @@ void singlePlayer() {
 	Story story;
 
 	string intro = story.getIntro(1);
+	cout << intro;
 }
 
 void multiPlayer() {
@@ -40,7 +40,8 @@ void multiPlayer() {
 
 	Story story;
 
-	string intro = story.getIntro(1);
+	string intro = story.getIntro(2);
+	cout << intro;
 }
 
 int convertToInt(string input) {
@@ -48,8 +49,10 @@ int convertToInt(string input) {
 	return choice;
 }
 
-void inputValidation(int input) {
-	while (input < 0 || input > 2) {
+void inputValidation(int input) 
+{
+	while (input < 0 || input > 2 && input >10) 
+	{
 		string menuChoice;
 
 		cout << "This is an invalid input" << endl;
