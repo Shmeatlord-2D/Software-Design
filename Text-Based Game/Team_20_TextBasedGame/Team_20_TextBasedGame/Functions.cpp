@@ -24,6 +24,7 @@ void mainMenu() {
 	}
 	else if (input == 0) {
 		cout << "Exit" << endl;
+		_Exit(10);
 	}
 }
 
