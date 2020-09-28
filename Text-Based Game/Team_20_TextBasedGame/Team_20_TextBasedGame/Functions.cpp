@@ -1,6 +1,9 @@
 #include "Game_Classes.h"
 #include <iostream>
 #include <string>
+#include<ctype.h>
+#include<stdio.h>
+
 using namespace std;
 
 void mainMenu() {
@@ -130,3 +133,5 @@ void inputValidation(int input) {
 		input = convertToInt(menuChoice);
 	}
 }
+
+
