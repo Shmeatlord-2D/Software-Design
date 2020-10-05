@@ -7,7 +7,7 @@ using namespace std;
 class Player
 {
 protected:
-	int health = 3;
+	int health = 30;
 public:
 	void damage()
 	{
@@ -53,7 +53,7 @@ public:
 		oxidizer = "Damaged";
 	}
 
-	string getReactorCore() {
+	string getReactorCore(){
 		return reactorCore;
 	}
 
@@ -176,8 +176,11 @@ public:
 void mainMenu();
 void singlePlayer();
 void multiPlayer();
-void inputValidation(int);
-void options(int);
+void singlePlayer();
+void multiPlayer();
+void inputValidation(int, int);
+void options(int, int);
 void gameRules();
+void locationSelection();
 
 int convertToInt(string);
