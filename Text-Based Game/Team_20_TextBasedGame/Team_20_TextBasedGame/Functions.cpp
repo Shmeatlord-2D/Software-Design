@@ -124,6 +124,7 @@ void gameIntro(int playerMode) {
 			"\napproximately 3 days to fix these systems before running out of oxygen.Luckily, however, this" <<
 			"\nregion of Minerva contains valuable minerals that may aid your fixing of these parts. Choose" <<
 			"\nyour path wisely, VST - 7426, and good luck" << endl << endl;
+		system("pause");
 	}
 	else {
 		cout << "Greetings VST-7426 and VST-7427. You are the two core members of Operation Vesta that" <<
@@ -136,11 +137,13 @@ void gameIntro(int playerMode) {
 			"\napproximately 3 days to fix these systems before running out of oxygen.Luckily, however, this" <<
 			"\nregion of Minerva contains valuable minerals that may aid your fixing of these parts. Choose" <<
 			"\nyour path wisely, and good luck." << endl << endl;
+		system("pause");
 	}
 
 	cout << "While looking through the wreckage of the Demeter, you found out that the exploration dispensery was damaged, but still operational." <<
 		"\nFour systems need repair:" <<
 		"\n-Reactor Core\n-Navigation System\n-Left Thruster\n-Oxidizer";
+	system("pause");
 
 	gameRules();
 }
@@ -158,16 +161,29 @@ void locationSelection() {
 	inputValidation(input, 4);
 
 	if (input == 1) {
-		cout << "LOCATION: Minerva Volcanos" << endl;
+		cout << "LOCATION: Minerva Volcanos" << endl <<endl;
+		cout << "Temp(C): 1500" << endl;
+		cout << "CAUTION!!" << endl << "Flowing magma, and magma pools identified" << endl;
+		cout << "Small amounts of Urainium located in vicinity" << endl << endl;
 	}
 	else if (input == 2) {
 		cout << "LOCATION: Caves" << endl;
+		cout << "Temp(C): 20" << endl;
+		cout << "CAUTION!!" << endl << "Limited visibility" << endl;
+		cout << "Moderate amounts of Copper located in vicinity"<< endl << endl;
 	}
 	else if (input == 3) {
 		cout << "LOCATION: Liquid Streams" << endl;
+		cout << "Temp(C): 9" << endl;
+		cout << "CAUTION!!" << endl << "Hydrocloric Acid found in stream" << endl;
+		cout << "Large amounts of Hydrazine located in vicinity" << endl << endl;
+
 	}
 	else if (input == 4) {
 		cout << "LOCATION: Clusters of Rocks" << endl;
+		cout << "Temp(C) = 25" << endl;
+		cout << "Multiple lifeforms detected in area" << endl;
+		cout << "Large amounts of Fluorine located in vicinity" << endl << endl;
 	}
 }
 
