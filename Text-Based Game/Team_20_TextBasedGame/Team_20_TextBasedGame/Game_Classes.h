@@ -213,7 +213,7 @@ private :
 	bool Florine = false;
 
 public:
-	void Set_The_Ship(bool Volcano_item, bool Stream_item, bool Cave_item, bool Rock_Cluster_item)
+	Ship_inventory(bool Volcano_item, bool Stream_item, bool Cave_item, bool Rock_Cluster_item)
 	{
 		Uranium = Volcano_item;
 		Hydrizine = Stream_item;

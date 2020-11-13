@@ -397,7 +397,7 @@ void paths(string location, int oxygen) {
 	locationDemeter(oxygen);
 }
 
-Inventory *Ship_Inventory = new Inventory; //The ship's inventory, so the player can input thier materials.
+Inventory *Ship = new Ship_inventory(false,false,false,false); //The ship's inventory, so the player can input thier materials.
 void locationDemeter(int oxygen) {
 	string choice;
 	cout << "\nLOCATION: Demeter" << endl << endl;
